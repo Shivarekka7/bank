@@ -19,5 +19,8 @@ public class BankDao {
 	public String  GetBranchByIfscCode(String a) {
 		return br.GetBranchByIfscCode( a);
 	}
-	
+	public List<Bank>GetAll(){
+		return br.findAll();
+	}
+
 }
